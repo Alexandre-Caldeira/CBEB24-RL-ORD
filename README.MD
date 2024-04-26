@@ -9,31 +9,38 @@ Sourcecode will be improved upon.
 
 Visit script in ./sourcecode/exp_data to replicate this figure: 
 ![alt text](./paper_figures/view_states.png)
+> Fig. 3: (a) The discretized states, represented in time for different frequencies - colored blue if stimulation is absent and red if present for the given frequency.
+
 > This requires access to the database, contact Tiago Zanotelli if needed.
 
 
 ## 1. Simulation script and result examples
+> Also, check ./sourcecode/validate_rlord_gen_states to test out different SNR
 
 Visit script in ./sourcecode/save_results to replicate this figure:
 ![alt text](./paper_figures/eeg_simulation_frequency.png)
-![alt text](./paper_figures/eeg_simulation_timeseries.png)
-> Also, check ./sourcecode/validate_rlord_gen_states to test out different SNR
+> Fig. 1: A pure tone stimulus is the theoretical detectable signal, which has noise added to it at 5 SNR, resulting in a simulated EEG measurement.
 
+![alt text](./paper_figures/eeg_simulation_timeseries.png)
+> Fig. 2: The simulated signals in Fig. 1 are shown in the frequency domain, and the stimulation frequency is shown in red for the noise and measurement spectra.
 
 ## 2. Reward shaping script and result
 
 Visit script in ./sourcecode/ to replicate this figure:
 ![alt text](./paper_figures/reward_function.png)
+> Fig. 3: (b) A smooth reward function is proposed based on the False Positive Rate, Detection Rate (True Positive) and Episode Progress. Notice that faster, correct detection tends to yield positive rewards whereas longer episodes and detection at incorrect states return more negative rewards, reinforcing true positives.
 
 ## 3. Training and testing on simulated data
 
 Visit script in ./sourcecode/save_results to replicate this figure:
 ![alt text](./paper_figures/snr5_simulations.png)
+> Fig. 4: (a) After each 5 training episodes, 100 tests are conducted and the average results are shown in blue. In orange, the moving mean demonstrates the agent learning, resulting in better detection rate (DR) and false positive rate (FPR). 
 
 ## 4. Testing pretrained agent on ASSR experiment
 
 Visit script in ./sourcecode/exp_data to replicate this figure: 
 ![alt text](./paper_figures/experimental_results.png)
+> Fig. 4: (b) Experimental ORD in ASSR using RL to optimize detection and false positive rates for a patient is demonstrated. On the first 200 seconds (windows), agent’s adaptation to the patient is observed as FPR and DR optimization.
 > This requires access to the database, contact Tiago Zanotelli if needed.
 
 ## 5. Extra comments that did not fit in the paper
