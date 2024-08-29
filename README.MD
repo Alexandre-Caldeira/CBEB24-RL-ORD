@@ -4,6 +4,15 @@ Alexandre Gomes Caldeira and Leonardo Bonato Felix
 
 Sourcecode will be improved upon.
 
+## Citation
+```
+@article{caldeira2024,
+  title={Patient-adaptive Objective Response Detection using Reinforcement Learning},
+  author={Caldeira, Alexandre and Felix, Leonardo},
+  journal={(YET TO BE RELEASED) IFMBE Proceedings Springer},
+  year={2024}
+}
+```
 
 ## 0. State representation 
 
