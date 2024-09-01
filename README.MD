@@ -3,7 +3,7 @@ Alexandre Gomes Caldeira and Leonardo Bonato Felix <br> [See our 5 min pitch-lik
 
 > **ABSTRACT:** <div style="text-align: justify"> In objective response detection (ORD) based on electroencephalograms (EEGs), different methods have been developed to detect brain responses to stimuli. Most rely on statistical hypothesis testing to objectively detect stimuli-induced responses, such as in Auditory Steady State Response (ASSR) detection. However, existing methods often require long test durations or assumptions about signal-to-noise ratios (SNR) and sample sizes, which can limit their practicality. To address these limitations, this paper introduces a novel approach to ASSR ORD using Reinforcement Learning (RL) methods, and a model is presented and tested. In both simulated and experimental data, the RL model is shown to enable online optimization of false positive rates while maintaining detection rates similar to other published methods, thereby custom-tailoring detectors to patients during exams or Brain-Computer Interface use. The potential of RL for enhancing ORD methods for any evoked response detection is highlighted and avenues for further research in this area are suggested. All the source code for replicating or improving upon these findings are made openly available online, and experimental data is accessible upon request to the authors. </div>
 
-<br>See also our Python implementation comparing Deep Reinforcement Learning approaches:
+See our Python implementation comparing Deep Reinforcement Learning approaches:
 [https://github.com/Alexandre-Caldeira/drl-ord/](https://github.com/Alexandre-Caldeira/drl-ord/)
 
 This work is licensed under [LGPL-2.1](https://choosealicense.com/licenses/lgpl-2.1/).
@@ -20,7 +20,6 @@ Like what you see? Cite us!
   journal={(Accepted for publication) Anais do XXIX CBEB, 2024 – Ribeirão Preto, SP.},
   year={2024}
 }
-
 ```
 
 ## Suggestions for collaboration:
