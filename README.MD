@@ -15,7 +15,27 @@ Sourcecode will be improved upon.
   journal={(Accepted for publication) Anais do XXIX CBEB, 2024 – Ribeirão Preto, SP.},
   year={2024}
 }
+
 ```
+
+## Suggestions for collaboration:
+
+Contact me if interested to work on any of these promising topics:
+
+  - Faster patient-adaptive Brain-Computer Interfaces
+  - Optimized clinical testing and diagnosis  
+  - Improved prostetic technology with RL 
+  - Physics-Informed Machine Learning  
+  - Explainable reinforced decisions  
+  - Optimized RL and DRL models
+
+The approach studied in this paper is focused in determining the main characteristics of the Reinforcement Learning solution to the ASSR ORD problem. In that sense, a direct, detection-focused methodology was proposed but there are useful variations to be tested and promising improvements to be researched. Namely, the problem statement can be changed in order to make the agent only be allowed only one detection for the whole episode. This is known as a single-shot detector and is widely used in classic hypothesis test ORDs. Another useful variation is to use a large set of windows as a single state, which reduces the amount of interactions per episode but in return can improve the relevance of the ORDs since they will use a larger sample size at each decision, hopefully leading to more accurate state representation. 
+
+Improvements are also expected if more recent RL methods are used - such as Double Deep Q-Networks and ActorCritic - given their ability to handle continuous inputs and capacity to outperform tabular Q-Learning methods shown in the literature. Other potential branches of research for improving this method can focus on other methods to represent the EEG state, using entropy, correlation, other coherence measurements, SNR estimation and other metrics derived from the plethora of research conducted in the time and frequency domain for evoked response detection. 
+
+Another possible adaptation to the method is adding a third action related to detecting noise, in order to measure False Negatives and True Negatives and further refine the learning towards better agents. Simulations can also be more representative of true data if SNR levels are sampled randomly or modified based on some function of time, to better represent the non stationary aspect of problem. 
+
+Finally, this work focuses its premises in simulating signals that behave similarly to EEG in ASSR detection exams, since the goal was to validate in experiments of this kind. However, notice that the framework proposed here can be easily adapted to the detection of other evoked responses. With this paper, we hope to direct the attention of researchers to the advantages of online optimization with Reinforcement Learning, which may be an important breakthrough for improving solutions to different problems in personalized medicine.
 
 ## 0. State representation 
 
@@ -74,15 +94,3 @@ Other methods for ORD such as the Convolutional Group Sequential Testing uses a 
 
 ### 5.4. Other instances of experimental results
 > To be added later (already checked and are analogous to the submitted results).
-
-## 6. Suggestions for collaboration
-
-Contact me if interested to work on any of these promising topics:
-
-The approach studied in this paper is focused in determining the main characteristics of the Reinforcement Learning solution to the ASSR ORD problem. In that sense, a direct, detection-focused methodology was proposed but there are useful variations to be tested and promising improvements to be researched. Namely, the problem statement can be changed in order to make the agent only be allowed only one detection for the whole episode. This is known as a single-shot detector and is widely used in classic hypothesis test ORDs. Another useful variation is to use a large set of windows as a single state, which reduces the amount of interactions per episode but in return can improve the relevance of the ORDs since they will use a larger sample size at each decision, hopefully leading to more accurate state representation. 
-
-Improvements are also expected if more recent RL methods are used - such as Double Deep Q-Networks and ActorCritic - given their ability to handle continuous inputs and capacity to outperform tabular Q-Learning methods shown in the literature. Other potential branches of research for improving this method can focus on other methods to represent the EEG state, using entropy, correlation, other coherence measurements, SNR estimation and other metrics derived from the plethora of research conducted in the time and frequency domain for evoked response detection. 
-
-Another possible adaptation to the method is adding a third action related to detecting noise, in order to measure False Negatives and True Negatives and further refine the learning towards better agents. Simulations can also be more representative of true data if SNR levels are sampled randomly or modified based on some function of time, to better represent the non stationary aspect of problem. 
-
-Finally, this work focuses its premises in simulating signals that behave similarly to EEG in ASSR detection exams, since the goal was to validate in experiments of this kind. However, notice that the framework proposed here can be easily adapted to the detection of other evoked responses. With this paper, we hope to direct the attention of researchers to the advantages of online optimization with Reinforcement Learning, which may be an important breakthrough for improving solutions to different problems in personalized medicine.
