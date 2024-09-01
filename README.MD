@@ -26,14 +26,14 @@ Like what you see? Cite us!
 ## Suggestions for collaboration:
 
 **Curious of how well our framework fits your problem?** <br>
-**Contact me if interested to work on any of these promising topics:
+**Contact `eegcal@gmail.com` if interested to work on any of these promising topics:**
 
-  - Faster patient-adaptive Brain-Computer Interfaces
-  - Optimized clinical testing and diagnosis  
-  - Improved prostetic technology with RL 
-  - Physics-Informed Machine Learning  
-  - Explainable reinforced decisions  
-  - Optimized RL and DRL models**
+  - **Faster patient-adaptive Brain-Computer Interfaces**
+  - **Optimized clinical testing and diagnosis**  
+  - **Improved prostetic technology with RL** 
+  - **Physics-Informed Machine Learning**  
+  - **Explainable reinforced decisions**  
+  - **Optimized RL and DRL models**
 
 The approach studied in this paper is focused in determining the main characteristics of the Reinforcement Learning solution to the ASSR ORD problem. In that sense, a direct, detection-focused methodology was proposed but there are useful variations to be tested and promising improvements to be researched. Namely, the problem statement can be changed in order to make the agent only be allowed only one detection for the whole episode. This is known as a single-shot detector and is widely used in classic hypothesis test ORDs. Another useful variation is to use a large set of windows as a single state, which reduces the amount of interactions per episode but in return can improve the relevance of the ORDs since they will use a larger sample size at each decision, hopefully leading to more accurate state representation. 
 
