@@ -1,7 +1,7 @@
 # Patient-adaptive Objective Response Detection <br> using Reinforcement Learning
 *Alexandre Gomes Caldeira and Leonardo Bonato Felix* <br> <a href="https://drive.google.com/file/d/1je-GIWY3jqOzrMXGR6Ksd4slGlTzOSmh/view?usp=sharing" target="_blank" rel="noopener noreferrer">See our 5 min pitch-like abstract</a>
 
-> **ABSTRACT:** <div style="text-align: justify"> <span style="font-size:0.7em;" >In objective response detection (ORD) based on electroencephalograms (EEGs), different methods have been developed to detect brain responses to stimuli. Most rely on statistical hypothesis testing to objectively detect stimuli-induced responses, such as in Auditory Steady State Response (ASSR) detection. However, existing methods often require long test durations or assumptions about signal-to-noise ratios (SNR) and sample sizes, which can limit their practicality. To address these limitations, this paper introduces a novel approach to ASSR ORD using Reinforcement Learning (RL) methods, and a model is presented and tested. In both simulated and experimental data, the RL model is shown to enable online optimization of false positive rates while maintaining detection rates similar to other published methods, thereby custom-tailoring detectors to patients during exams or Brain-Computer Interface use. The potential of RL for enhancing ORD methods for any evoked response detection is highlighted and avenues for further research in this area are suggested. All the source code for replicating or improving upon these findings are made openly available online, and experimental data is accessible upon request to the authors. </span> </div>
+> **ABSTRACT:** <div style="text-align: justify"> <span style="font-size: 0.1em" >In objective response detection (ORD) based on electroencephalograms (EEGs), different methods have been developed to detect brain responses to stimuli. Most rely on statistical hypothesis testing to objectively detect stimuli-induced responses, such as in Auditory Steady State Response (ASSR) detection. However, existing methods often require long test durations or assumptions about signal-to-noise ratios (SNR) and sample sizes, which can limit their practicality. To address these limitations, this paper introduces a novel approach to ASSR ORD using Reinforcement Learning (RL) methods, and a model is presented and tested. In both simulated and experimental data, the RL model is shown to enable online optimization of false positive rates while maintaining detection rates similar to other published methods, thereby custom-tailoring detectors to patients during exams or Brain-Computer Interface use. The potential of RL for enhancing ORD methods for any evoked response detection is highlighted and avenues for further research in this area are suggested. All the source code for replicating or improving upon these findings are made openly available online, and experimental data is accessible upon request to the authors. </span> </div>
 
 **See our Python implementation comparing Deep Reinforcement Learning approaches:**
 <a href="https://github.com/Alexandre-Caldeira/drl-ord/" target="_blank">https://github.com/Alexandre-Caldeira/drl-ord/</a>
@@ -27,12 +27,12 @@ Like what you see? Cite us!
 **Curious of how well our framework fits your problem?** <br>
 **Contact `eegcal@gmail.com` if interested to work on any of these promising topics:**
 
-  - **Faster patient-adaptive Brain-Computer Interfaces**
-  - **Optimized clinical testing and diagnosis**  
-  - **Improved prostetic technology with RL** 
-  - **Physics-Informed Machine Learning**  
-  - **Explainable reinforced decisions**  
-  - **Optimized RL and DRL models**
+  - **Faster patient-adaptive Brain-Computer Interfaces;**
+  - **Optimized clinical testing and diagnosis;**  
+  - **Improved prostetic technology with RL;** 
+  - **Physics-Informed Machine Learning;**  
+  - **Explainable reinforced decisions;**  
+  - **Optimized RL and DRL models.**
 
 The approach studied in this paper is focused in determining the main characteristics of the Reinforcement Learning solution to the ASSR ORD problem. In that sense, a direct, detection-focused methodology was proposed but there are useful variations to be tested and promising improvements to be researched. Namely, the problem statement can be changed in order to make the agent only be allowed only one detection for the whole episode. This is known as a single-shot detector and is widely used in classic hypothesis test ORDs. Another useful variation is to use a large set of windows as a single state, which reduces the amount of interactions per episode but in return can improve the relevance of the ORDs since they will use a larger sample size at each decision, hopefully leading to more accurate state representation. 
 
