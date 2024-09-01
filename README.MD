@@ -1,7 +1,7 @@
 # Patient-adaptive Objective Response Detection <br> using Reinforcement Learning
 *Alexandre Gomes Caldeira and Leonardo Bonato Felix* <br> <a href="https://drive.google.com/file/d/1je-GIWY3jqOzrMXGR6Ksd4slGlTzOSmh/view?usp=sharing" target="_blank" rel="noopener noreferrer">See our 5 min pitch-like abstract</a>
 
-
+![](https://github.com/Alexandre-Caldeira/CBEB24-RL-ORD/blob/main/other_imgs/front_page.jpg?raw=true)
 
 **See our Python implementation comparing Deep Reinforcement Learning approaches:**
 <a href="https://github.com/Alexandre-Caldeira/drl-ord/" target="_blank">https://github.com/Alexandre-Caldeira/drl-ord/</a>
