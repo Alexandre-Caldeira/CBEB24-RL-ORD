@@ -41,21 +41,21 @@ function states = db_to_dstates(signal_freq_bins, ...
     
 
 
-    fcInferior = 70;
-    fcSuperior = 110;
-    [b,a] = butter(2,[fcInferior/(Fs/2), fcSuperior/(Fs/2)]);
-
-    d = designfilt('bandstopiir','FilterOrder',2, ...
-               'HalfPowerFrequency1',59,'HalfPowerFrequency2',61, ...
-               'DesignMethod','butter','SampleRate',Fs);
-    % freqz(d,[],Fs)
-    x = filtfilt(d,x);
-
-    d2 = designfilt('bandpassiir','FilterOrder',4, ...
-        'HalfPowerFrequency1',fcInferior,'HalfPowerFrequency2',fcSuperior, ...
-        'DesignMethod','butter','SampleRate',Fs);
-    % freqz(d2,[],Fs)
-    x = filtfilt(d2,x);
+    % fcInferior = 70;
+    % fcSuperior = 110;
+    % [b,a] = butter(2,[fcInferior/(Fs/2), fcSuperior/(Fs/2)]);
+    % 
+    % d = designfilt('bandstopiir','FilterOrder',2, ...
+    %            'HalfPowerFrequency1',59,'HalfPowerFrequency2',61, ...
+    %            'DesignMethod','butter','SampleRate',Fs);
+    % % freqz(d,[],Fs)
+    % x = filtfilt(d,x);
+    % 
+    % d2 = designfilt('bandpassiir','FilterOrder',4, ...
+    %     'HalfPowerFrequency1',fcInferior,'HalfPowerFrequency2',fcSuperior, ...
+    %     'DesignMethod','butter','SampleRate',Fs);
+    % % freqz(d2,[],Fs)
+    % x = filtfilt(d2,x);
     
     % x = filter(b,a,x); 
     % excluir os dois primeiros segundos do inicio da coleta 

@@ -55,6 +55,9 @@ noise_freq_bins = [noise_freq_bins,round(signal_freq_bins.*exp(1)*sqrt(2))-30];
 % noise_freq_bins = [noise_freq_bins,round(signal_freq_bins.*exp(1)*sqrt(2))+35]
 % noise_freq_bins = [noise_freq_bins,round(signal_freq_bins.*exp(1)*sqrt(2))-11,round(signal_freq_bins.*exp(1)*sqrt(2))+10,signal_freq_bins-15]
 
+noise_freq_bins = noise_freq_bins(4);
+signal_freq_bins = signal_freq_bins(4);
+
 % noise_freq_bins = [1:500];
 % noise_freq_bins([1:125,signal_freq_bins,signal_freq_bins*2, ...
     % signal_freq_bins*3,signal_freq_bins*4,signal_freq_bins*5, ...
