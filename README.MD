@@ -1,9 +1,49 @@
 # Patient-adaptive Objective Response Detection <br> using Reinforcement Learning
-Alexandre Gomes Caldeira and Leonardo Bonato Felix
-> In objective response detection (ORD) based on electroencephalograms (EEGs), different methods have been developed to detect brain responses to stimuli. Most rely on statistical hypothesis testing to objectively detect stimuli-induced responses, such as in Auditory Steady State Response (ASSR) detection. However, existing methods often require long test durations or assumptions about signal-to-noise ratios (SNR) and sample sizes, which can limit their practicality. To address these limitations, this paper introduces a novel approach to ASSR ORD using Reinforcement Learning (RL) methods, and a model is presented and tested. In both simulated and experimental data, the RL model is shown to enable online optimization of false positive rates while maintaining detection rates similar to other published methods, thereby custom-tailoring detectors to patients during exams or Brain-Computer Interface use. The potential of RL for enhancing ORD methods for any evoked response detection is highlighted and avenues for further research in this area are suggested. All the source code for replicating or improving upon these findings are made openly available online, and experimental data is accessible upon request to the authors.
+*Alexandre Gomes Caldeira and Leonardo Bonato Felix* <br> <a href="https://drive.google.com/file/d/1je-GIWY3jqOzrMXGR6Ksd4slGlTzOSmh/view?usp=sharing" target="_blank" rel="noopener noreferrer">See our 5 min pitch-like abstract</a>
 
-Sourcecode will be improved upon.
 
+
+**See our Python implementation comparing Deep Reinforcement Learning approaches:**
+<a href="https://github.com/Alexandre-Caldeira/drl-ord/" target="_blank">https://github.com/Alexandre-Caldeira/drl-ord/</a>
+
+This work is licensed under [LGPL-2.1](https://choosealicense.com/licenses/lgpl-2.1/).
+<br>Sourcecode will be improved upon continuously.
+
+## Citation
+
+Like what you see? Cite us!
+
+```
+@article{caldeira2024,
+  title={Patient-adaptive Objective Response Detection using Reinforcement Learning},
+  author={Caldeira, Alexandre and Felix, Leonardo},
+  journal={(Accepted for publication) Anais do XXIX CBEB, 2024 – Ribeirão Preto, SP.},
+  year={2024}
+}
+```
+
+## Suggestions for collaboration:
+
+**Curious of how well our framework fits your problem?** <br>
+**Contact `eegcal@gmail.com` if interested to work on any of these promising topics:**
+
+  - **Faster patient-adaptive Brain-Computer Interfaces;**
+  - **Optimized clinical testing and diagnosis;**  
+  - **Improved prostetic technology with RL;** 
+  - **Physics-Informed Machine Learning;**  
+  - **Explainable reinforced decisions;**  
+  - **Optimized RL and DRL models.**
+
+
+> **ABSTRACT:** <div style="text-align: justify"> <span style="font-size: 0.1em" >In objective response detection (ORD) based on electroencephalograms (EEGs), different methods have been developed to detect brain responses to stimuli. Most rely on statistical hypothesis testing to objectively detect stimuli-induced responses, such as in Auditory Steady State Response (ASSR) detection. However, existing methods often require long test durations or assumptions about signal-to-noise ratios (SNR) and sample sizes, which can limit their practicality. To address these limitations, this paper introduces a novel approach to ASSR ORD using Reinforcement Learning (RL) methods, and a model is presented and tested. In both simulated and experimental data, the RL model is shown to enable online optimization of false positive rates while maintaining detection rates similar to other published methods, thereby custom-tailoring detectors to patients during exams or Brain-Computer Interface use. The potential of RL for enhancing ORD methods for any evoked response detection is highlighted and avenues for further research in this area are suggested. All the source code for replicating or improving upon these findings are made openly available online, and experimental data is accessible upon request to the authors. </span> </div>
+
+The approach studied in this paper is focused in determining the main characteristics of the Reinforcement Learning solution to the ASSR ORD problem. In that sense, a direct, detection-focused methodology was proposed but there are useful variations to be tested and promising improvements to be researched. Namely, the problem statement can be changed in order to make the agent only be allowed only one detection for the whole episode. This is known as a single-shot detector and is widely used in classic hypothesis test ORDs. Another useful variation is to use a large set of windows as a single state, which reduces the amount of interactions per episode but in return can improve the relevance of the ORDs since they will use a larger sample size at each decision, hopefully leading to more accurate state representation. 
+
+Improvements are also expected if more recent RL methods are used - such as Double Deep Q-Networks and ActorCritic - given their ability to handle continuous inputs and capacity to outperform tabular Q-Learning methods shown in the literature. Other potential branches of research for improving this method can focus on other methods to represent the EEG state, using entropy, correlation, other coherence measurements, SNR estimation and other metrics derived from the plethora of research conducted in the time and frequency domain for evoked response detection. 
+
+Another possible adaptation to the method is adding a third action related to detecting noise, in order to measure False Negatives and True Negatives and further refine the learning towards better agents. Simulations can also be more representative of true data if SNR levels are sampled randomly or modified based on some function of time, to better represent the non stationary aspect of problem. 
+
+Finally, this work focuses its premises in simulating signals that behave similarly to EEG in ASSR detection exams, since the goal was to validate in experiments of this kind. However, notice that the framework proposed here can be easily adapted to the detection of other evoked responses. With this paper, we hope to direct the attention of researchers to the advantages of online optimization with Reinforcement Learning, which may be an important breakthrough for improving solutions to different problems in personalized medicine.
 
 ## 0. State representation 
 
@@ -62,15 +102,3 @@ Other methods for ORD such as the Convolutional Group Sequential Testing uses a 
 
 ### 5.4. Other instances of experimental results
 > To be added later (already checked and are analogous to the submitted results).
-
-## 6. Suggestions for collaboration
-
-Contact me if interested to work on any of these promising topics:
-
-The approach studied in this paper is focused in determining the main characteristics of the Reinforcement Learning solution to the ASSR ORD problem. In that sense, a direct, detection-focused methodology was proposed but there are useful variations to be tested and promising improvements to be researched. Namely, the problem statement can be changed in order to make the agent only be allowed only one detection for the whole episode. This is known as a single-shot detector and is widely used in classic hypothesis test ORDs. Another useful variation is to use a large set of windows as a single state, which reduces the amount of interactions per episode but in return can improve the relevance of the ORDs since they will use a larger sample size at each decision, hopefully leading to more accurate state representation. 
-
-Improvements are also expected if more recent RL methods are used - such as Double Deep Q-Networks and ActorCritic - given their ability to handle continuous inputs and capacity to outperform tabular Q-Learning methods shown in the literature. Other potential branches of research for improving this method can focus on other methods to represent the EEG state, using entropy, correlation, other coherence measurements, SNR estimation and other metrics derived from the plethora of research conducted in the time and frequency domain for evoked response detection. 
-
-Another possible adaptation to the method is adding a third action related to detecting noise, in order to measure False Negatives and True Negatives and further refine the learning towards better agents. Simulations can also be more representative of true data if SNR levels are sampled randomly or modified based on some function of time, to better represent the non stationary aspect of problem. 
-
-Finally, this work focuses its premises in simulating signals that behave similarly to EEG in ASSR detection exams, since the goal was to validate in experiments of this kind. However, notice that the framework proposed here can be easily adapted to the detection of other evoked responses. With this paper, we hope to direct the attention of researchers to the advantages of online optimization with Reinforcement Learning, which may be an important breakthrough for improving solutions to different problems in personalized medicine.
