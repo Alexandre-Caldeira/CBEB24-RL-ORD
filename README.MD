@@ -11,7 +11,7 @@ Sourcecode will be improved upon. See also our Python implementation comparing D
 @article{caldeira2024,
   title={Patient-adaptive Objective Response Detection using Reinforcement Learning},
   author={Caldeira, Alexandre and Felix, Leonardo},
-  journal={(YET TO BE RELEASED) IFMBE Proceedings Springer},
+  journal={(Accepted for publication) Anais do XXIX CBEB, 2024 – Ribeirão Preto, SP.},
   year={2024}
 }
 ```
