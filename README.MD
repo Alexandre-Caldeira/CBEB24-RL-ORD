@@ -1,5 +1,5 @@
 # Patient-adaptive Objective Response Detection <br> using Reinforcement Learning
-*Alexandre Gomes Caldeira and Leonardo Bonato Felix* <br> <a href="https://drive.google.com/file/d/1je-GIWY3jqOzrMXGR6Ksd4slGlTzOSmh/view?usp=sharing" target="_blank" rel="noopener noreferrer">See our 5 min pitch-like abstract</a>
+*Alexandre Gomes Caldeira and Leonardo Bonato Felix* <br> <a href="https://drive.google.com/file/d/1je-GIWY3jqOzrMXGR6Ksd4slGlTzOSmh/view?usp=sharing" target="_blank" rel="noopener noreferrer">See our 5 min pitch-like abstract</a> | [Full Slides](https://github.com/Alexandre-Caldeira/CBEB24-RL-ORD/blob/main/complementary_results/PTBR_RLORD_CBEB24_apres_final.pdf) | [Pitch Slides](https://github.com/Alexandre-Caldeira/CBEB24-RL-ORD/blob/main/complementary_results/RLORD_CBEB2024_Pitch.pdf)
 
 ![](https://github.com/Alexandre-Caldeira/CBEB24-RL-ORD/blob/main/other_imgs/front_page.jpg?raw=true)
 
