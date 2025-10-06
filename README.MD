@@ -14,12 +14,23 @@ This work is licensed under [LGPL-2.1](https://choosealicense.com/licenses/lgpl-
 Like what you see? Cite us!
 
 ```
-@article{caldeira2024,
-  title={Patient-adaptive Objective Response Detection using Reinforcement Learning},
-  author={Caldeira, Alexandre and Felix, Leonardo},
-  journal={(Accepted for publication) Anais do XXIX CBEB, 2024 – Ribeirão Preto, SP.},
-  year={2024}
+@InProceedings{caldeira2025,
+author="Gomes Caldeira, Alexandre
+and Felix, Leonardo Bonato",
+editor="Soares, Alcimar Barbosa
+and Leoni, Renata Ferranti
+and Cardoso, George Cunha",
+title="Patient-Adaptive Objective Response Detection Using Reinforcement Learning",
+booktitle="XXIX Brazilian Congress on Biomedical Engineering - Volume 3: Biomedical Informatics, and Biomedical Signal and Image Processing ",
+year="2025",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="629--639",
+abstract="In objective response detection (ORD) based on electroencephalograms (EEGs), different methods have been developed to detect brain responses to stimuli. Many rely on statistical hypothesis testing to objectively detect stimuli-induced responses, such as in Auditory Steady State Response (ASSR) detection. However, existing methods often require long test durations or assumptions about signal-to-noise ratios (SNR) and sample sizes, which can limit their practicality. To address these limitations, this paper introduces a novel approach to ASSR ORD using Reinforcement Learning (RL) methods, and a model is presented and tested. In both simulated and experimental data, the RL model is shown to enable online optimization of false positive rates while maintaining detection rates similar to other published methods, thereby custom-tailoring detectors to patients during exams or Brain-Computer Interface use. The potential of RL for enhancing ORD methods for any evoked response detection is highlighted and avenues for further research in this area are suggested. All the source code for replicating or improving upon these findings is made openly available online, and experimental data is accessible upon request to the authors.",
+isbn="978-3-031-94934-0"
 }
+
+
 ```
 Model validation was conducted on a previously published database [11], approved by the Local Ethics Committee (CEP/UFV No.2.105.334).
 
